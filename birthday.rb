@@ -57,24 +57,32 @@ class Person
   
 
 end
-
-petra = Person.new("Petra", 2016, 8, 5)
-lauren = Person.new("Lauren", 1985, 2, 26)
-
-
-
-
-
-
 #
-# age_in_days = calculate_age_in_days(birthday)
-# age_in_months = calculate_age_in_months(birthday)
-# age_in_years = calculate_age_in_years(birthday)
+# petra = Person.new("Petra", 2016, 8, 5)
+# lauren = Person.new("Lauren", 1985, 2, 26)
+# #
+# # age_in_days = calculate_age_in_days(birthday)
+# # age_in_months = calculate_age_in_months(birthday)
+# # age_in_years = calculate_age_in_years(birthday)
+# #
+# puts petra.print_hello_world
+# puts petra.print_age
 #
-puts petra.print_hello_world
-puts petra.print_age
+# puts lauren.print_hello_world
+# puts lauren.print_age
+#
 
-puts lauren.print_hello_world
-puts lauren.print_age
+people = Array.new
+people << Person.new("Petra", 2016, 8, 5)
+people << Person.new("Lauren", 1985, 2, 26)
+people << Person.new("Marty", 1945, 1, 30)
+people << Person.new("Paul", 1944, 11, 13)
+  
+people.each do |person|
+  puts person.print_hello_world
+  puts person.print_age
+  puts "\n" 
+end
+
 
 
